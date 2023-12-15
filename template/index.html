@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<form method="post">
+    {% csrf_token %}
+    <input type="text" name="task" placeholder="enter your task ">
+    <input type="text" name="priority" placeholder="enter your task priority">
+    <input type="submit">
+
+</form>
+
+{% for i in task1 %}
+
+{{i.task}}<br>
+{{i.priority}}<br>
+
+{% endfor %}
+
+</body>
+</html>
